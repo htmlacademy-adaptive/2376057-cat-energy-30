@@ -41,7 +41,8 @@
 
 
       <form class="selection__forms" action="htmlacademy.ru">
-        <fieldset class="selecttion__fieldset">
+        <fieldset class="selection__fieldset">
+          <legend class="visually-hidden">Информация о животном</legend>
           <ul class="selection__forms-list">
             <li class="selection__forms-item"><label class="selection__forms-title">
                 Имя:*
@@ -59,6 +60,7 @@
         </fieldset>
 
         <fieldset class="selection__fieldset">
+          <legend class="visually-hidden">Выбор программы</legend>
           <ul class="selection__forms-list">
             <li class="selection__forms-item">
               <label class="selection__forms-title">
@@ -81,68 +83,65 @@
           </ul>
         </fieldset>
 
-        <h2 class="selection__subtitle">Контактные данные
-          (владельца кота)</h2>
-
         <fieldset class="selection__fieldset">
+          <legend class="selection__fieldset-title">Контактные данные
+            (владельца кота)</legend>
           <ul class="selection__forms-list">
             <li class="selection__forms-item">
               <label class="selection__forms-title">
                 E-mail:*
-                <input class="selection__form-input selection__form-input--email" type="email" required>
+                <input class="selection__form-input selection__form-input--email" type="email" name="email" required>
               </label>
             </li>
             <li class="selection__forms-item">
               <label class="selection__forms-title">
                 Телефон:*
-                <input class="selection__form-input selection__form-input--tel" type="tel" required>
+                <input class="selection__form-input selection__form-input--tel" type="tel" name="tel" required>
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <h2 class="selection__subtitle">Комментарий</h2>
-
         <fieldset class="selection__fieldset">
-          <label class="selection_title">
+          <legend class="selection__fieldset-title">Комментарий</legend>
+          <label class="selection__title">
             <span class="visually-hidden">Комментарий</span>
             <input class="selection__form-input selection__form-input--comment" type="text"
-              placeholder="Расскажите обо всех повадках кота">
+              placeholder="Расскажите обо всех повадках кота" name="comment">
           </label>
         </fieldset>
 
-        <h2 class="selection__subtitle">Дополнительно</h2>
-
         <fieldset class="selection__fieldset">
+          <legend class="selection__fieldset-title">Дополнительно</legend>
           <ul class="selection__list">
             <li class="selection__item">
               <label class="selection__forms-title">
-                <input class="selection_form-checkbox" type="checkbox" name="additionally" checked>
+                <input class="selection__form-checkbox" type="checkbox" name="additionally" checked>
                 сахарозаменитель
               </label>
             </li>
             <li class="selection__item">
               <label class="selection__forms-title">
-                <input class="selection_form-checkbox" type="checkbox" name="additionally">
+                <input class="selection__form-checkbox" type="checkbox" name="additionally">
                 питьевая вода
               </label>
             </li>
             <li class="selection__item">
               <label class="selection__forms-title">
-                <input class="selection_form-checkbox" type="checkbox" name="additionally">
+                <input class="selection__form-checkbox" type="checkbox" name="additionally">
                 молоко
               </label>
             </li>
             <li class="selection__item">
               <label class="selection__forms-title">
-                <input class="selection_form-checkbox" type="checkbox" name="additionally">
+                <input class="selection__form-checkbox" type="checkbox" name="additionally">
                 витамины
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <button class="selection__forms-button button">отправить заявку</button>
+        <button class="selection__forms-button button" type="submit">отправить заявку</button>
         <p class="selection__text">* — Обязательные поля</p>
 
 
