@@ -1,0 +1,68 @@
+.catalog__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.catalog__item-title {
+  text-transform: uppercase;
+}
+
+.catalog__item-text {
+  font-family: $secondary-font;
+  color: $dark;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__item-button {
+  @include button;
+  border: none;
+}
+
+.catalog__subtitle {
+  text-transform: uppercase;
+}
+
+.catalog__text {
+  font-family: $secondary-font;
+  color: $dark;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__link {
+  text-decoration: none;
+  color: $dark;
+  text-transform: uppercase;
+}
+
+.catalog__additionally {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.catalog__additionally-list {
+  list-style-type: none;
+}
+
+.catalog__aditionally-title {
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.catalog__additionally-text {
+  font-family: $secondary-font;
+  color: $dark;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.catalog__additionally-button {
+  @include button;
+  border: none;
+}
+
+.catalog__promote-title {
+  font-family: $secondary-font;
+  color: $lighter;
+}
