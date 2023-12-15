@@ -7,13 +7,14 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles/styles.css">
   <title>Cat energy</title>
 </head>
 
 <body class="page__body">
 
   <header class="main-header">
-    <a class="main-header__primary-logo" href="#">
+    <span class="main-header__primary-logo">
       <picture>
         <source width="70" height="59" type="image/png" media="(min-width: 1440px)"
           srcset="images/logo--desktop@1x.png 1x, images/logo--desktop@2x.png 2x">
@@ -22,7 +23,7 @@
         <img class="main-header__primary-logo-image" src="images/logo--mobile@1x.png"
           srcset="images/logo--mobile@2x.png 2x" alt="Логотип СatEnergy." width="33" height="38">
       </picture>
-    </a>
+    </span>
     <a class="main-header__secondary-logo" href="#">
       <picture>
         <source width="118" height="21" type="image/png" media="(min-width: 1440px)"
@@ -38,7 +39,7 @@
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">каталог продукции</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">подбор программы</a></li>
+          <li class="main-nav__item"><span class="main-nav__link main-nav__link--current">подбор программы</span></li>
         </ul>
       </div>
     </nav>
@@ -127,7 +128,7 @@
 
           <fieldset class="selection__fieldset">
             <legend class="selection__fieldset-title">Дополнительно</legend>
-            <ul class="selection__list">
+            <ul class="selection__forms-list">
               <li class="selection__item">
                 <label class="selection__forms-title">
                   <input class="selection__form-checkbox" type="checkbox" name="selection__additionally" checked>
@@ -156,7 +157,7 @@
           </fieldset>
 
           <button class="selection__forms-button button" type="submit">отправить заявку</button>
-          <p class="selection__text">* — Обязательные поля</p>
+          <p class="selection__forms-description">* — Обязательные поля</p>
 
 
         </form>
@@ -170,7 +171,7 @@
       <div class="address__container container">
 
         <h2 class="address__title">приглашаем к сотрудничеству дилеров!</h2>
-        <address>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <address class="address__subtitle">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
 
         <picture>
           <source width="1440" height="400" type="image/png" media="(min-width: 1440px)"

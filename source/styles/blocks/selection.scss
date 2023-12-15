@@ -1,0 +1,36 @@
+.selection__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.selection__text {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.selection__forms-list {
+  list-style-type: none;
+}
+
+.selection__forms-title {
+  color: $dark;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.selection__fieldset-title {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.selection__forms-button {
+  @include button;
+  border: none;
+}
+
+.selection__forms-description {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 16px;
+}
