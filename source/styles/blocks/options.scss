@@ -4,6 +4,48 @@
   text-transform: uppercase;
 }
 
+.options__title--lose {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 50px;
+    background-image: url("../../images/icons/stack.svg#cat-slim");
+
+    @media (min-width: 768px) {
+      width: 140px;
+      height: 194px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 70px;
+      height: 97px;
+    }
+  }
+}
+
+.options__title--gain {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 67px;
+    height: 28px;
+    background-image: url("../../images/icons/stack.svg#cat-strong");
+
+    @media (min-width: 768px) {
+      width: 268px;
+      height: 112px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 134px;
+      height: 56px;
+    }
+  }
+}
+
 .options__description {
   font-family: $secondary-font;
   color: $dark;
