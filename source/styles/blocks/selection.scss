@@ -26,6 +26,7 @@
 
 .selection__form-input--email {
   position: relative;
+
   &::after {
     position: absolute;
     content: "";

@@ -6,6 +6,7 @@
 
 .options__title--lose {
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
@@ -27,6 +28,7 @@
 
 .options__title--gain {
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
