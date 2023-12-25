@@ -4,9 +4,17 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../images/icons/stack.svg#academy-logo");
+    background-color: #666666;
+  }
 }
-
-
 
 .main-footer__logo-link {
   position: relative;
@@ -56,19 +64,6 @@
     width: 28px;
     height: 22px;
     mask-image: url("../../images/icons/stack.svg#tg");
-    background-color: #666666;
-  }
-}
-
-.main-footer__copyright-title {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 27px;
-    height: 34px;
-    mask-image: url("../../images/icons/stack.svg#academy-logo");
     background-color: #666666;
   }
 }
