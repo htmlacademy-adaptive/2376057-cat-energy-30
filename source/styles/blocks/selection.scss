@@ -32,7 +32,8 @@
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url("../../images/icons/stack.svg#form-mail");
+    mask-image: url("../../images/icons/stack.svg#form-mail");
+    background-color: #000000;
   }
 }
 
@@ -44,7 +45,8 @@
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url("../../images/icons/stack.svg#form-phone");
+    mask-image: url("../../images/icons/stack.svg#form-phone");
+    background-color: #000000;
   }
 }
 

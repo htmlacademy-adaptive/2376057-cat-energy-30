@@ -5,3 +5,70 @@
   line-height: 20px;
   text-decoration: none;
 }
+
+
+
+.main-footer__logo-link {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 128px;
+    height: 24px;
+    mask-image: url("../../images/icons/stack.svg#logo-footer");
+    background-color: #111111;
+  }
+}
+
+.main-footer__social-link--vk {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 22px;
+    mask-image: url("../../images/icons/stack.svg#vk");
+    background-color: #666666;
+  }
+}
+
+.main-footer__social-link--youtube {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 22px;
+    mask-image: url("../../images/icons/stack.svg#yt");
+    background-color: #666666;
+  }
+}
+
+.main-footer__social-link--telegram {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 22px;
+    mask-image: url("../../images/icons/stack.svg#tg");
+    background-color: #666666;
+  }
+}
+
+.main-footer__copyright-title {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../images/icons/stack.svg#academy-logo");
+    background-color: #666666;
+  }
+}
