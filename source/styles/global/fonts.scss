@@ -1,9 +1,2 @@
-$primary-font: "Oswald", sans-serif;
-$secondary-font: "Lato", sans-serif;
-
-$lighter: #ffffff;
-$dark: #444444;
-$darker: #000000;
-
 @include font-face("Oswald", url("../../fonts/oswald-v53-latin-regular.woff2") format("woff2"));
 @include font-face("Lato", url("../../fonts/lato-v24-latin-regular.woff2") format("woff2"));

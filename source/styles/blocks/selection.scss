@@ -24,6 +24,32 @@
   line-height: 26px;
 }
 
+.selection__forms-input-email {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    mask-image: url("../../images/icons/stack.svg#form-mail");
+    background-color: #000000;
+  }
+}
+
+.selection__forms-input-tel {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    mask-image: url("../../images/icons/stack.svg#form-phone");
+    background-color: #000000;
+  }
+}
+
 .selection__forms-button {
   @include button;
   border: none;
