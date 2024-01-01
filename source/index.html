@@ -14,27 +14,29 @@
 <body class="page__body">
 
   <header class="main-header">
-    <span class="main-header__primary-logo">
-      <picture>
-        <source width="70" height="59" type="image/png" media="(min-width: 1440px)"
-          srcset="images/logo--desktop@1x.png 1x, images/logo--desktop@2x.png 2x">
-        <source width="60" height="50" type="image/png" media="(min-width: 768px)"
-          srcset="images/logo--tablet@1x.png 1x, images/logo--tablet@2x.png 2x">
-        <img class="main-header__primary-logo-image" src="images/logo--mobile@1x.png"
-          srcset="images/logo--mobile@2x.png 2x" alt="Логотип СatEnergy." width="33" height="38">
-      </picture>
-    </span>
-    <a class="main-header__secondary-logo" href="#">
-      <picture>
-        <source width="118" height="21" type="image/png" media="(min-width: 1440px)"
-          srcset="images/logo-name--desktop@1x.png 1x, images/logo-name--desktop@2x.png 2x">
-        <img class="main-header__secondary-logo-image" src="images/logo-name--mobile--tablet@1x.png"
-          srcset="images/logo-name--mobile--tablet@2x.png 2x" alt="Надпись СatEnergy." width="101" height="18">
-      </picture>
-    </a>
+    <div class="main-header__logo-wrapper">
+      <span class="main-header__primary-logo">
+        <picture>
+          <source width="70" height="59" type="image/png" media="(min-width: 1440px)"
+            srcset="images/logo--desktop@1x.png 1x, images/logo--desktop@2x.png 2x">
+          <source width="60" height="50" type="image/png" media="(min-width: 768px)"
+            srcset="images/logo--tablet@1x.png 1x, images/logo--tablet@2x.png 2x">
+          <img class="main-header__primary-logo-image" src="images/logo--mobile@1x.png"
+            srcset="images/logo--mobile@2x.png 2x" alt="Логотип СatEnergy." width="33" height="38">
+        </picture>
+      </span>
+      <a class="main-header__secondary-logo" href="#">
+        <picture>
+          <source width="118" height="21" type="image/png" media="(min-width: 1440px)"
+            srcset="images/logo-name--desktop@1x.png 1x, images/logo-name--desktop@2x.png 2x">
+          <img class="main-header__secondary-logo-image" src="images/logo-name--mobile--tablet@1x.png"
+            srcset="images/logo-name--mobile--tablet@2x.png 2x" alt="Надпись СatEnergy." width="101" height="18">
+        </picture>
+      </a>
+    </div>
 
+    <input class="main-nav__toggle" type="checkbox" name="burger" id="burger"><span class="visually-hidden">Открыть навигацию.</span></input>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть навигацию.</span></button>
       <div class="main-nav__container container">
         <ul class="main-nav__list">
           <li class="main-nav__item"><span class="main-nav__link main-nav__link--current">главная</span></li>
