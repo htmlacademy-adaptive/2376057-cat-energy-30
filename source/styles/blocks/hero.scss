@@ -1,5 +1,47 @@
 .hero {
   color: $lighter;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__bg-wrapper {
+  width: 100%;
+  background:
+    linear-gradient(rgba($basic-green, 0.85) 62.4%, rgba($basic-green, 0.85)),
+    image-set(url("../../images/hero-cat-bg--mobile@1x.jpg") type("image/jpg") 1x,
+      url("../../images/hero-cat-bg--mobile@2x.jpg") type("image/jpg") 2x);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto 302px;
+
+  @media (min-width: $tablet-width) {
+    width: unset;
+    background: none;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 182px;
+
+    &::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 694px;
+      z-index: -1;
+      background:
+        linear-gradient(to right, rgba($basic-green, 0.85) 50%, rgba($basic-green, 0.85) 50%),
+        image-set(url("../../images/hero-cat-bg-desktop@1x.jpg") type("image/jpg") 1x,
+          url("../../images/hero-cat-bg-desktop@2x.jpg") type("image/jpg") 2x);
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 50vw 694px, cover;
+    }
+  }
 }
 
 .hero__title {
@@ -12,6 +54,10 @@
   font-size: 14px;
   line-height: 14px;
   text-align: center;
+}
+
+.hero__link-wrapper {
+
 }
 
 .hero__link {
