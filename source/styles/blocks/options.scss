@@ -1,7 +1,16 @@
+.options__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.options__card {
+}
+
 .options__title {
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .options__title--lose {
@@ -13,6 +22,7 @@
     width: 36px;
     height: 50px;
     background-image: url("../../images/icons/stack.svg#cat-slim");
+    left: 30px;
 
     @media (min-width: 768px) {
       width: 140px;
@@ -35,6 +45,7 @@
     width: 67px;
     height: 28px;
     background-image: url("../../images/icons/stack.svg#cat-strong");
+    left: 2px;
 
     @media (min-width: 768px) {
       width: 268px;
@@ -53,6 +64,7 @@
   color: $dark;
   font-size: 14px;
   line-height: 18px;
+
 }
 
 .options__link {
