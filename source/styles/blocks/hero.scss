@@ -96,6 +96,9 @@
 }
 
 .hero__main-image {
+  margin: 0 auto;
+  display: block;
+
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -118,7 +121,7 @@
 
 .hero__link {
   @include button;
-
+  width: 280px;
   @media (min-width: $tablet-width) {
     position: absolute;
     top: -577px;

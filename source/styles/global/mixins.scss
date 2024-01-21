@@ -11,7 +11,7 @@
 @mixin button {
   background-color: #68b738;
   color: $lighter;
-  padding: 10px 44px;
+  padding: 10px 0 10px 0;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;

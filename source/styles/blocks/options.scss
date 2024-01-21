@@ -1,6 +1,14 @@
-.options__container {
+.options__wrapper {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  width: 280px;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    gap: 30px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -10,8 +18,11 @@
   }
 }
 
+
+
 .options__card {
   padding: 30px 33px 18px 20px;
+  background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     padding: 77px 316px 57px 52px;
@@ -46,18 +57,42 @@
     width: 36px;
     height: 50px;
     background-image: url("../../images/icons/stack.svg#cat-slim");
-    left: 30px;
+    left: 0px;
+    z-index: 2;
 
     @media (min-width: $tablet-width) {
       width: 140px;
       height: 194px;
-      left: 550px;
+      left: 424px;
     }
 
     @media (min-width: $desktop-width) {
       width: 70px;
       height: 97px;
       left: -1px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: $basic-green;
+    border-radius: 50%;
+    z-index: 1;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      left: 400px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      left: 5px;
     }
   }
 }
@@ -71,18 +106,42 @@
     width: 67px;
     height: 28px;
     background-image: url("../../images/icons/stack.svg#cat-strong");
-    left: 2px;
+    left: -10px;
+    z-index: 2;
 
     @media (min-width: $tablet-width) {
       width: 268px;
       height: 112px;
-      left: 450px;
+      left: 358px;
     }
 
     @media (min-width: $desktop-width) {
       width: 134px;
       height: 56px;
       left: -1px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: $basic-green;
+    border-radius: 50%;
+    z-index: 1;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      left: 400px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      left: 25px;
     }
   }
 }
@@ -92,7 +151,7 @@
   color: $dark;
   font-size: 14px;
   line-height: 18px;
-  width: 340px;
+  width: 227px;
 
   @media (min-width: $desktop-width) {
     text-align: start;

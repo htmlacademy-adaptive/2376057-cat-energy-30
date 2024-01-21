@@ -1,9 +1,10 @@
-.main-header {
+
+.main-header__container {
   position: relative;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -132,4 +133,3 @@
     }
   }
 }
-

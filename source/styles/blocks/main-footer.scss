@@ -1,18 +1,17 @@
-.main-footer__copyright-title {
-  font-family: $secondary-font;
-  color: $dark;
-  font-size: 16px;
-  line-height: 20px;
-  text-decoration: none;
-  position: relative;
+.main-footer {
+  background-color: $basic-grey;
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 27px;
-    height: 34px;
-    mask-image: url("../../images/icons/stack.svg#academy-logo");
-    background-color: #666666;
+.main-footer__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -22,11 +21,25 @@
   &::before {
     position: absolute;
     content: "";
+    left: -66px;
     width: 128px;
     height: 24px;
     mask-image: url("../../images/icons/stack.svg#logo-footer");
     background-color: #111111;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      left: 0;
+    }
+  }
+}
+
+.main-footer__social-list {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
 }
 
 .main-footer__social-link--vk {
@@ -35,10 +48,17 @@
   &::before {
     position: absolute;
     content: "";
+    left: -64px;
     width: 28px;
     height: 22px;
     mask-image: url("../../images/icons/stack.svg#vk");
     background-color: #666666;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      left: 19px;
+    }
   }
 }
 
@@ -48,10 +68,17 @@
   &::before {
     position: absolute;
     content: "";
+    left: -12px;
     width: 28px;
     height: 22px;
     mask-image: url("../../images/icons/stack.svg#yt");
     background-color: #666666;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      left: 74px;
+    }
   }
 }
 
@@ -61,9 +88,52 @@
   &::before {
     position: absolute;
     content: "";
+    left: 35px;
     width: 28px;
     height: 22px;
     mask-image: url("../../images/icons/stack.svg#tg");
     background-color: #666666;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      left: 125px;
+    }
+  }
+}
+
+.main-footer__copyright-wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    margin: 0;
+  }
+}
+
+.main-footer__copyright-title {
+  font-family: $secondary-font;
+  color: $dark;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  position: relative;
+  align-self: start;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 253px;
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../images/icons/stack.svg#academy-logo");
+    background-color: #666666;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      left: 130px;
+    }
   }
 }
