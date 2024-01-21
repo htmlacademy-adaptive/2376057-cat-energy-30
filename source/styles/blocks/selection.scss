@@ -1,5 +1,5 @@
 .selection__title {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 36px;
 }
 
@@ -9,8 +9,24 @@
   text-transform: uppercase;
 }
 
+.selection__fieldset {
+  border: none;
+}
+
 .selection__forms-list {
   list-style-type: none;
+}
+
+.selection__item {
+  &--add {
+    margin-bottom: 13px;
+  }
+}
+
+.selection__forms-item {
+  &--programm {
+    margin-bottom: 13px;
+  }
 }
 
 .selection__forms-title {
@@ -19,22 +35,52 @@
   text-transform: uppercase;
 }
 
+.selection__forms-input {
+  height: 45px;
+  margin-bottom: 14px;
+
+  &--name {
+    width: 200px;
+  }
+
+  &--weight {
+    width: 173px;
+  }
+
+  &--year {
+    width: 128px;
+    margin-bottom: 24px;
+  }
+}
+
 .selection__fieldset-title {
   font-size: 24px;
   line-height: 26px;
+
+  &--add {
+    margin-bottom: 34px;
+  }
 }
 
 .selection__forms-input-email {
   position: relative;
+  margin-bottom: 19px;
 
   &::after {
     position: absolute;
     content: "";
+    right: 20px;
+    top: 10px;
     width: 20px;
     height: 20px;
     mask-image: url("../../images/icons/stack.svg#form-mail");
     background-color: #000000;
   }
+}
+
+.selection__form-input--email {
+  width: 195px;
+  height: 45px;
 }
 
 .selection__forms-input-tel {
@@ -43,6 +89,8 @@
   &::after {
     position: absolute;
     content: "";
+    right: 20px;
+    top: 10px;
     width: 20px;
     height: 20px;
     mask-image: url("../../images/icons/stack.svg#form-phone");
@@ -50,13 +98,26 @@
   }
 }
 
+.selection__form-input--tel {
+  width: 157px;
+  height: 45px;
+}
+
+.selection__form-input--comment {
+  width: 250px;
+  height: 150px;
+}
+
 .selection__forms-button {
   @include button;
   border: none;
+
+  width: 280px;
 }
 
 .selection__forms-description {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
 }
