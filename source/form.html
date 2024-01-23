@@ -59,49 +59,51 @@
         <p class="selection__text">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
 
-
         <form class="selection__forms" action="htmlacademy.ru">
-          <fieldset class="selection__fieldset">
-            <legend class="visually-hidden">Информация о животном</legend>
-            <ul class="selection__forms-list--info">
-              <li class="selection__forms-item"><label class="selection__forms-title">
-                  Имя:*
-                  <input class="selection__forms-input selection__forms-input--name" type="text" name="name" required>
-                </label></li>
-              <li class="selection__forms-item"><label class="selection__forms-title">
-                  Вес (кг):*
-                  <input class="selection__forms-input selection__forms-input--weight" type="number" name="weight" required>
-                </label></li>
-              <li class="selection__forms-item"><label class="selection__forms-title">
-                  Возраст (Лет):
-                  <input class="selection__forms-input selection__forms-input--year" type="number" name="years">
-                </label></li>
-            </ul>
-          </fieldset>
+          <div class="selection__forms-wrapper">
+            <fieldset class="selection__fieldset">
+              <legend class="visually-hidden">Информация о животном</legend>
+              <ul class="selection__forms-list--info">
+                <li class="selection__forms-item"><label class="selection__forms-title">
+                    Имя:*
+                    <input class="selection__forms-input selection__forms-input--name" type="text" name="name" required>
+                  </label></li>
+                <li class="selection__forms-item"><label class="selection__forms-title">
+                    Вес (кг):*
+                    <input class="selection__forms-input selection__forms-input--weight" type="number" name="weight"
+                      required>
+                  </label></li>
+                <li class="selection__forms-item"><label class="selection__forms-title">
+                    Возраст (Лет):
+                    <input class="selection__forms-input selection__forms-input--year" type="number" name="years">
+                  </label></li>
+              </ul>
+            </fieldset>
 
-          <fieldset class="selection__fieldset">
-            <legend class="visually-hidden">Выбор программы</legend>
-            <ul class="selection__forms-list--programm">
-              <li class="selection__forms-item--programm">
-                <label class="selection__forms-title">
-                  <input class="selection-forms-radio" type="radio" name="choice" checked>
-                  Похудение
-                </label>
-              </li>
-              <li class="selection__forms-item--programm">
-                <label class="selection__forms-title">
-                  <input class="selection-forms-radio" type="radio" name="choice">
-                  Набор массы
-                </label>
-              </li>
-              <li class="selection__forms-item--programm">
-                <label class="selection__forms-title">
-                  <input class="selection-forms-radio" type="radio" name="choice">
-                  не знаю (нужен ваш совет)
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="selection__fieldset">
+              <legend class="visually-hidden">Выбор программы</legend>
+              <ul class="selection__forms-list--programm">
+                <li class="selection__forms-item--programm">
+                  <label class="selection__forms-title">
+                    <input class="selection-forms-radio" type="radio" name="choice" checked>
+                    Похудение
+                  </label>
+                </li>
+                <li class="selection__forms-item--programm">
+                  <label class="selection__forms-title">
+                    <input class="selection-forms-radio" type="radio" name="choice">
+                    Набор массы
+                  </label>
+                </li>
+                <li class="selection__forms-item--programm">
+                  <label class="selection__forms-title">
+                    <input class="selection-forms-radio" type="radio" name="choice">
+                    не знаю (нужен ваш совет)
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
           <fieldset class="selection__fieldset">
             <legend class="selection__fieldset-title">Контактные данные
@@ -168,9 +170,10 @@
             </ul>
           </fieldset>
 
-          <button class="selection__forms-button button" type="submit">отправить заявку</button>
-          <p class="selection__forms-description">* — Обязательные поля</p>
-
+          <div class="selection__forms-button-wrapper">
+            <button class="selection__forms-button button" type="submit">отправить заявку</button>
+            <p class="selection__forms-description">* — Обязательные поля</p>
+          </div>
 
         </form>
       </div>
