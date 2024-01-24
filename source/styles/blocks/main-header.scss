@@ -1,4 +1,3 @@
-
 .main-header__container {
   position: relative;
   width: 100%;
@@ -24,14 +23,13 @@
   }
 }
 
-.main-nav__toggle {
+.main-header__toggle {
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
 .main-nav {
-
   @media (max-width: 767px) {
     width: 100%;
   }
@@ -78,7 +76,7 @@
       background-color: $light-gray;
     }
 
-    &:last-child:before {
+    &:last-child::before {
       position: absolute;
       content: "";
       bottom: 0;
@@ -89,8 +87,6 @@
     }
   }
 }
-
-
 
 .main-nav__link {
   color: $darker;
@@ -106,7 +102,7 @@
     opacity: 0.3;
   }
 
-  @media (min-width: $desktop-width ) {
+  @media (min-width: $desktop-width) {
     color: $lighter;
   }
 }
@@ -115,7 +111,6 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-
     &::after {
       position: absolute;
       content: "";

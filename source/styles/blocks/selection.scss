@@ -14,10 +14,9 @@
 }
 
 .selection__forms-wrapper {
-
   @media (min-width: $desktop-width) {
-   display: flex;
-   gap: 80px;
+    display: flex;
+    gap: 80px;
   }
 }
 
@@ -99,7 +98,6 @@
 }
 
 .selection__forms-list--contacts {
-
   @media (min-width: $tablet-width) {
     display: flex;
     gap: 80px;
@@ -198,7 +196,6 @@
 }
 
 .selection__forms-button-wrapper {
-
   @media (min-width: $tablet-width) {
     display: flex;
   }

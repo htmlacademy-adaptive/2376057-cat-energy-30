@@ -36,14 +36,13 @@
         </a>
       </div>
 
-      <input class="main-nav__toggle" type="checkbox" name="burger" id="burger"><span class="visually-hidden">Открыть
-        навигацию.</span></input>
+      <input class="main-header__toggle" type="checkbox" name="burger" id="burger" aria-label="Открыть навигацию.">
       <nav class="main-nav">
         <div class="main-nav__container container">
           <ul class="main-nav__list">
             <li class="main-nav__item"><span class="main-nav__link main-nav__link--current">главная</span></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">каталог продукции</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">подбор программы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">каталог продукции</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">подбор программы</a></li>
           </ul>
         </div>
       </nav>
@@ -63,7 +62,7 @@
           <div class="selection__forms-wrapper">
             <fieldset class="selection__fieldset">
               <legend class="visually-hidden">Информация о животном</legend>
-              <ul class="selection__forms-list--info">
+              <ul class="selection__forms-list selection__forms-list--info">
                 <li class="selection__forms-item"><label class="selection__forms-title">
                     Имя:*
                     <input class="selection__forms-input selection__forms-input--name" type="text" name="name" required>
@@ -82,20 +81,20 @@
 
             <fieldset class="selection__fieldset">
               <legend class="visually-hidden">Выбор программы</legend>
-              <ul class="selection__forms-list--programm">
-                <li class="selection__forms-item--programm">
+              <ul class="selection__forms-list selection__forms-list--programm">
+                <li class="selection__forms-item selection__forms-item--programm">
                   <label class="selection__forms-title">
                     <input class="selection-forms-radio" type="radio" name="choice" checked>
                     Похудение
                   </label>
                 </li>
-                <li class="selection__forms-item--programm">
+                <li class="selection__forms-item selection__forms-item--programm">
                   <label class="selection__forms-title">
                     <input class="selection-forms-radio" type="radio" name="choice">
                     Набор массы
                   </label>
                 </li>
-                <li class="selection__forms-item--programm">
+                <li class="selection__forms-item selection__forms-item--programm">
                   <label class="selection__forms-title">
                     <input class="selection-forms-radio" type="radio" name="choice">
                     не знаю (нужен ваш совет)
@@ -108,13 +107,14 @@
           <fieldset class="selection__fieldset">
             <legend class="selection__fieldset-title">Контактные данные
               (владельца кота)</legend>
-            <ul class="selection__forms-list--contacts">
+            <ul class="selection__forms-list selection__forms-list--contacts">
               <li class="selection__forms-item">
 
                 <div class="selection__forms-input-email">
                   <label class="selection__forms-title">
                     E-mail:*
-                    <input class="selection__form-input--email" type="email" name="email" required>
+                    <input class="selection__form-input selection__form-input--email" type="email" name="email"
+                      required>
                   </label>
                 </div>
               </li>
@@ -123,7 +123,7 @@
                 <div class="selection__forms-input-tel">
                   <label class="selection__forms-title">
                     Телефон:*
-                    <input class="selection__form-input--tel" type="tel" name="tel" required>
+                    <input class="selection__form-input selection__form-input--tel" type="tel" name="tel" required>
                   </label>
                 </div>
 
@@ -142,26 +142,26 @@
 
           <fieldset class="selection__fieldset">
             <legend class="selection__fieldset-title selection__fieldset-title--add">Дополнительно</legend>
-            <ul class="selection__forms-list--add">
-              <li class="selection__item--add">
+            <ul class="selection__forms-list selection__forms-list--add">
+              <li class="selection__item selection__item--add">
                 <label class="selection__forms-title">
                   <input class="selection__form-checkbox" type="checkbox" name="selection__additionally" checked>
                   сахарозаменитель
                 </label>
               </li>
-              <li class="selection__item--add">
+              <li class="selection__item selection__item--add">
                 <label class="selection__forms-title">
                   <input class="selection__form-checkbox" type="checkbox" name="selection__additionally">
                   питьевая вода
                 </label>
               </li>
-              <li class="selection__item--add">
+              <li class="selection__item selection__item--add">
                 <label class="selection__forms-title">
                   <input class="selection__form-checkbox" type="checkbox" name="selection__additionally">
                   молоко
                 </label>
               </li>
-              <li class="selection__item--add">
+              <li class="selection__item selection__item--add">
                 <label class="selection__forms-title">
                   <input class="selection__form-checkbox" type="checkbox" name="selection__additionally">
                   витамины

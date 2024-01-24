@@ -19,7 +19,6 @@
 }
 
 .example__subtitle-wrapper {
-
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -68,7 +67,6 @@
 }
 
 .example__slider {
-
   @media (min-width: $desktop-width) {
     display: inline-block;
     margin-left: 500px;

@@ -18,8 +18,6 @@
   }
 }
 
-
-
 .options__card {
   padding: 30px 33px 18px 20px;
   background-color: $basic-grey;
@@ -57,7 +55,7 @@
     width: 36px;
     height: 50px;
     background-image: url("../../images/icons/stack.svg#cat-slim");
-    left: 0px;
+    left: 0;
     z-index: 2;
 
     @media (min-width: $tablet-width) {
@@ -157,7 +155,6 @@
     text-align: start;
     margin: 0 auto;
   }
-
 }
 
 .options__link {
@@ -167,7 +164,7 @@
   text-decoration: none;
   display: block;
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     text-align: start;
   }
 }

@@ -54,7 +54,6 @@
 }
 
 .hero__text-container {
-
   @media (min-width: $tablet-width) {
     width: 414px;
     display: flex;
@@ -77,10 +76,7 @@
     width: 414px;
     text-align: start;
   }
-
-
 }
-
 
 .hero__text {
   font-size: 14px;
@@ -91,14 +87,11 @@
     color: $darker;
     text-align: start;
   }
-
-
 }
 
 .hero__main-image {
   margin: 0 auto;
   display: block;
-
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -122,6 +115,7 @@
 .hero__link {
   @include button;
   width: 280px;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     top: -577px;
