@@ -1,5 +1,5 @@
 .selection__title {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 36px;
 }
 
@@ -7,10 +7,37 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    width: 323px;
+  }
+}
+
+.selection__forms-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 80px;
+  }
+}
+
+.selection__fieldset {
+  border: none;
 }
 
 .selection__forms-list {
   list-style-type: none;
+}
+
+.selection__item {
+  &--add {
+    margin-bottom: 13px;
+  }
+}
+
+.selection__forms-item {
+  &--programm {
+    margin-bottom: 13px;
+  }
 }
 
 .selection__forms-title {
@@ -19,21 +46,94 @@
   text-transform: uppercase;
 }
 
+.selection__forms-input {
+  height: 45px;
+  margin-bottom: 14px;
+
+  &--name {
+    width: 200px;
+
+    @media (min-width: $tablet-width) {
+      width: 568px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 510px;
+    }
+  }
+
+  &--weight {
+    width: 173px;
+
+    @media (min-width: $tablet-width) {
+      width: 540px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 482px;
+    }
+  }
+
+  &--year {
+    width: 128px;
+    margin-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      width: 498px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 440px;
+    }
+  }
+}
+
 .selection__fieldset-title {
   font-size: 24px;
   line-height: 26px;
+
+  &--add {
+    margin-bottom: 34px;
+  }
+}
+
+.selection__forms-list--contacts {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 80px;
+  }
 }
 
 .selection__forms-input-email {
   position: relative;
+  margin-bottom: 19px;
 
   &::after {
     position: absolute;
     content: "";
+    right: 20px;
+    top: 10px;
     width: 20px;
     height: 20px;
     mask-image: url("../../images/icons/stack.svg#form-mail");
     background-color: #000000;
+
+    @media (min-width: $tablet-width) {
+      right: 80px;
+    }
+  }
+}
+
+.selection__form-input--email {
+  width: 195px;
+  height: 45px;
+
+  @media (min-width: $tablet-width) {
+    width: 565px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 510px;
   }
 }
 
@@ -43,20 +143,86 @@
   &::after {
     position: absolute;
     content: "";
+    right: 20px;
+    top: 10px;
     width: 20px;
     height: 20px;
     mask-image: url("../../images/icons/stack.svg#form-phone");
     background-color: #000000;
+
+    @media (min-width: $tablet-width) {
+      right: 80px;
+    }
+  }
+}
+
+.selection__form-input--tel {
+  width: 157px;
+  height: 45px;
+
+  @media (min-width: $tablet-width) {
+    width: 528px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 420px;
+  }
+}
+
+.selection__form-input--comment {
+  width: 250px;
+  height: 150px;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+    height: 175px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 1152px;
+  }
+}
+
+.selection__forms-list--add {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 164px;
+  }
+}
+
+.selection__forms-button-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }
 
 .selection__forms-button {
   @include button;
   border: none;
+
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 570px;
+  }
 }
 
 .selection__forms-description {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 80px;
+  }
 }

@@ -1,6 +1,10 @@
 .example__title {
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
 }
 
 .example__text {
@@ -8,6 +12,30 @@
   color: $dark;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
+}
+
+.example__subtitle-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
+}
+
+.example__argument-wrapper {
+  display: flex;
+  justify-content: space-around;
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
 }
 
 .example__argument-title {
@@ -26,4 +54,21 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 175px;
+    text-align: end;
+
+    @media (min-width: $desktop-width) {
+      width: 300px;
+    }
+  }
+}
+
+.example__slider {
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    margin-left: 500px;
+  }
 }
