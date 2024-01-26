@@ -1,9 +1,28 @@
+.example-container {
+  background-color: #eaeaea;
+  padding-top: 25px;
+  padding-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 110px 40px 110px;
+    max-width: 100%;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 1260px;
+    margin: 0 auto;
+  }
+}
+
 .example__title {
   font-size: 36px;
   line-height: 40px;
 
   @media (min-width: $desktop-width) {
     display: inline-block;
+    font-size: 60px;
   }
 }
 
@@ -12,9 +31,12 @@
   color: $dark;
   font-size: 14px;
   line-height: 18px;
+  margin-bottom: 34px;
 
   @media (min-width: $desktop-width) {
     width: 436px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -32,22 +54,59 @@
 .example__argument-wrapper {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    width: 367px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 436px;
   }
 }
 
+.example__argument {
+  position: relative;
+  border: 1px solid #cdcdcd;
+  padding: 11px 20px;
+  border-radius: 5px;
+  width: 124px;
+  height: 56px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
+}
+
 .example__argument-title {
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__argument-description {
+  position: absolute;
   font-family: $secondary-font;
   color: $dark;
   font-size: 12px;
   line-height: 12px;
+  width: 77px;
+  text-align: center;
+  margin: 0;
+  bottom: -15px;
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    width: 125px;
+    bottom: -5px;
+  }
 }
 
 .example__subtitle {
@@ -57,14 +116,16 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 175px;
+    font-size: 20px;
+    width: 174px;
     text-align: end;
+  }
 
-    @media (min-width: $desktop-width) {
-      width: 300px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 300px;
   }
 }
+
 
 .example__slider {
   @media (min-width: $desktop-width) {

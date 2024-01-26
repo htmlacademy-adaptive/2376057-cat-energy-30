@@ -55,10 +55,9 @@
 
 .hero__text-container {
   @media (min-width: $tablet-width) {
-    width: 414px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin-left: 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,14 +66,17 @@
 }
 
 .hero__title {
-  font-size: 35px;
+  font-size: 36px;
   line-height: 36px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
     color: $darker;
-    width: 414px;
+    width: 450px;
     text-align: start;
+    margin-bottom: 40px;
   }
 }
 
@@ -82,10 +84,14 @@
   font-size: 14px;
   line-height: 14px;
   text-align: center;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     color: $darker;
     text-align: start;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 50px;
   }
 }
 
@@ -117,12 +123,15 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
+    width: 254px;
+    padding: 14px 0 14px 0;
     position: absolute;
     top: -577px;
-    left: 25px;
+    left: 65px;
   }
 
   @media (min-width: $desktop-width) {
     position: static;
+    text-align: center;
   }
 }
