@@ -126,3 +126,47 @@
   }
 }
 
+.example__slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.example__slider-wrapper {
+  position: relative;
+  overflow: hidden; /* Добавляем overflow: hidden, чтобы изображения не выходили за пределы контейнера */
+}
+
+.example__image-wrapper {
+  width: 100%;
+  position: relative; /* Позиционируем изображения относительно родительского контейнера */
+}
+
+.example__slider-before,
+.example__slider-after {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute; /* Позиционируем изображения абсолютно внутри родительского контейнера */
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease; /* Добавляем плавное переходное состояние */
+}
+
+.example__slider-after {
+  transform: translateX(100%); /* Сдвигаем второе изображение вправо на 100% относительно родительского контейнера */
+}
+
+.example__slider-input {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  width: 50%;
+  z-index: 10;
+}
+
+
+
+
