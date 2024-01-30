@@ -1,14 +1,23 @@
 .main-header__container {
+  height: 100%;
   position: relative;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 
   @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    padding-top: 39px;
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    max-width: 1440px;
+    padding-top: 71px;
   }
 }
 
@@ -45,134 +54,8 @@
   background-repeat: no-repeat;
   cursor: pointer;
 
-
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.main-nav {
-  @media (max-width: 767px) {
-    width: 100%;
-  }
-
-  @media (min-width: $tablet-width) {
-    min-width: 490px;
-  }
-}
-
-.main-nav__list {
-  display: flex;
-
-  @media (max-width: 767px) {
-    width: 100%;
-    flex-direction: column;
-    position: absolute;
-  }
-
-  @media (min-width: $tablet-width) {
-    gap: 33px;
-  }
-}
-
-.main-nav__item {
-  text-align: center;
-
-  @media (max-width: 767px) {
-    // ВЫКЛЮЧЕНИЕ МЕНЮ
-    display: none;
-    // ВЫКЛЮЧЕНИЕ МЕНЮ
-    position: relative;
-    width: 100%;
-    padding-top: 22px;
-    padding-bottom: 24px;
-    background-color: $lighter;
-
-    &::after {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      background-color: $light-gray;
-    }
-
-    &:last-child::before {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      background-color: $light-gray;
-    }
-  }
-}
-
-.main-nav__link {
-  color: $darker;
-  font-size: 20;
-  text-decoration: none;
-  text-transform: uppercase;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  @media (min-width: $desktop-width) {
-    color: $lighter;
-
-    &--form-catalog {
-      color: #111111;
-    }
-  }
-}
-
-.main-nav__link--current {
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    &::after {
-      position: absolute;
-      content: "";
-      bottom: -10px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: $basic-green;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::after {
-      background-color: $lighter;
-    }
-  }
-}
-
-.main-nav__link--current-form-catalog {
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    &::after {
-      position: absolute;
-      content: "";
-      bottom: -10px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: $basic-green;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::after {
-      background-color: $basic-green;
-    }
-  }
-}

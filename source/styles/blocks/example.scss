@@ -7,12 +7,14 @@
     padding: 25px 110px 40px 110px;
     max-width: 100%;
   }
+
 }
 
 .example__wrapper {
   @media (min-width: $desktop-width) {
     width: 1260px;
     margin: 0 auto;
+    display: flex;
   }
 }
 
@@ -20,7 +22,7 @@
   font-size: 36px;
   line-height: 40px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: inline-block;
     font-size: 60px;
   }
@@ -32,6 +34,12 @@
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
 
   @media (min-width: $desktop-width) {
     width: 436px;
@@ -126,47 +134,95 @@
   }
 }
 
-.example__slider {
+.example__wrapper-slider {
   position: relative;
-  width: 100%;
-  max-width: 600px;
+  display: flex;
   margin: 0 auto;
+  margin-bottom: 37px;
+  min-height: 256px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 101px;
+    width: 516px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
 }
 
-.example__slider-wrapper {
-  position: relative;
-  overflow: hidden; /* Добавляем overflow: hidden, чтобы изображения не выходили за пределы контейнера */
+.example__wrapper-first {
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+  z-index: 0;
 }
 
-.example__image-wrapper {
-  width: 100%;
-  position: relative; /* Позиционируем изображения относительно родительского контейнера */
-}
-
-.example__slider-before,
-.example__slider-after {
-  display: block;
-  width: 100%;
-  height: auto;
-  position: absolute; /* Позиционируем изображения абсолютно внутри родительского контейнера */
+.example__wrapper-second {
+  position: absolute;
   top: 0;
   left: 0;
-  transition: transform 0.3s ease; /* Добавляем плавное переходное состояние */
+  z-index: 0;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
 }
 
-.example__slider-after {
-  transform: translateX(100%); /* Сдвигаем второе изображение вправо на 100% относительно родительского контейнера */
-}
-
-.example__slider-input {
+.example__wrapper-range {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  bottom: 20px;
-  width: 50%;
-  z-index: 10;
+  top: 50%;
+  height: 256px;
+  transform: translate(-50%, -50%);
+  border: none;
+  padding: 0;
+  z-index: 1;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+    left: 50%;
+  }
 }
 
+.example__button-range {
+  border: none;
+  background-color: transparent;
+  color: #666666;
+  padding: 0;
+  z-index: 1;
 
+  &::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 4px;
+    border-radius: 4px;
+    height: 100%;
+    background-color: #666666;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
 
+  &:hover {
+    color: #666666;
+  }
 
+  &:hover::before {
+    background-color: #666666;
+  }
+
+  &:active {
+    color: $basic-secondary-color;
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    background-color: $basic-secondary-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      left: 100%;
+    }
+  }
+}
