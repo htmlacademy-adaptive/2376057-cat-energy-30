@@ -1,0 +1,48 @@
+
+.selection__forms-title {
+
+  &--radio {
+    padding-left: 45px;
+  }
+
+  &--checkbox {
+    padding-left: 43px;
+  }
+
+}
+
+.selection-forms-radio {
+  appearance: none;
+  position: absolute;
+
+  &:checked + .selection-radio {
+    background-image: url("../../images/icons/stack.svg#radio-button-checked");
+  }
+}
+
+.selection__form-checkbox {
+  appearance: none;
+  position: absolute;
+
+  &:checked + .selection-checkbox {
+    background-image: url("../../images/icons/stack.svg#checkbox-checked");
+  }
+}
+
+.selection-radio {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-image: url("../../images/icons/stack.svg#radio-button-off");
+  margin-left: -45px;
+}
+
+.selection-checkbox {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-size: cover;
+  background-image: url("../../images/icons/stack.svg#checkbox-off");
+  margin-left: -43px;
+}

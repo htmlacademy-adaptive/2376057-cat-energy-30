@@ -1,11 +1,20 @@
 .advantages__title {
-  font-size: 34px;
+  font-size: 36px;
   line-height: 40px;
+  margin: 0;
+  margin-bottom: 42px;
+  margin-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }
 
 .advantages__wrapper {
   margin: 0 auto;
   width: 280px;
+  padding-top: 59px;
+  padding-bottom: 53px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -20,16 +29,17 @@
   display: flex;
   flex-direction: column;
   gap: 26px;
-  align-items: end;
+  margin-left: 80px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0;
+    gap: 37px 137px;
+    margin-left: 0;
   }
 
-  @media (min-width: $tablet-width) {
-    justify-content: space-around;
+  @media (min-width: $desktop-width) {
+    gap: 37px 80px;
   }
 }
 
@@ -41,18 +51,28 @@
   width: 200px;
 
   @media (min-width: $tablet-width) {
-    height: 280px;
-    padding-top: 150px;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-height: 280px;
+    width: 245px;
+    gap: unset;
 
     &::after {
-      counter-increment: list-item;
-      content: counter(list-item);
       font-family: $primary-font, sans-serif;
+      content: counter(list-item);
+      counter-increment: list-item;
       position: absolute;
       left: 0%;
-      top: 100px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: transparent;
       color: $basic-grey;
       font-size: 280px;
+      line-height: 280px;
       padding-left: 118px;
       z-index: -1;
     }
@@ -61,15 +81,14 @@
 
 .advantages__item--leaf {
   position: relative;
-  width: 230px;
 
   &::before {
     position: absolute;
     content: "";
     width: 60px;
     height: 60px;
-    right: 234px;
-    top: 15px;
+    left: -80px;
+    top: 0;
     z-index: 1;
     background-color: $basic-green;
     background-image: url("../../images/icons/stack.svg#icon-leaf");
@@ -78,7 +97,8 @@
     background-position: center;
 
     @media (min-width: $tablet-width) {
-      right: 152px;
+      left: 0;
+      top: 40px;
       width: 80px;
       height: 80px;
     }
@@ -87,7 +107,6 @@
 
 .advantages__item--water {
   position: relative;
-  width: 246px;
 
 
   @media (min-width: $tablet-width) {
@@ -103,8 +122,8 @@
     content: "";
     width: 60px;
     height: 60px;
-    right: 234px;
-    top: 15px;
+    left: -80px;
+    top: 0;
     z-index: 1;
     background-color: $basic-green;
     background-image: url("../../images/icons/stack.svg#icon_water");
@@ -113,7 +132,8 @@
     background-position: center;
 
     @media (min-width: $tablet-width) {
-      right: 152px;
+      left: 0;
+      top: 40px;
       width: 80px;
       height: 80px;
     }
@@ -122,15 +142,14 @@
 
 .advantages__item--devices {
   position: relative;
-  width: 247px;
 
   &::before {
     position: absolute;
     content: "";
     width: 60px;
     height: 60px;
-    right: 234px;
-    top: 15px;
+    left: -80px;
+    top: 0;
     z-index: 1;
     background-color: $basic-green;
     background-image: url("../../images/icons/stack.svg#icon-devices");
@@ -139,7 +158,8 @@
     background-position: center;
 
     @media (min-width: $tablet-width) {
-      right: 152px;
+      left: 0;
+      top: 40px;
       width: 80px;
       height: 80px;
     }
@@ -148,7 +168,6 @@
 
 .advantages__item--clock {
   position: relative;
-  width: 249px;
 
   @media (min-width: $tablet-width) {
     margin-left: 137px;
@@ -163,8 +182,8 @@
     content: "";
     width: 60px;
     height: 60px;
-    right: 234px;
-    top: 15px;
+    left: -80px;
+    top: 0;
     z-index: 1;
     background-color: $basic-green;
     background-image: url("../../images/icons/stack.svg#icon-clock");
@@ -173,9 +192,15 @@
     background-position: center;
 
     @media (min-width: $tablet-width) {
-      right: 152px;
+      left: 0;
+      top: 40px;
       width: 80px;
       height: 80px;
     }
   }
+}
+
+.advantages__text {
+  width: 245px;
+  margin-bottom: 57px;
 }

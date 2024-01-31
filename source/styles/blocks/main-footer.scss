@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 240px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -28,6 +29,19 @@
     background-color: #111111;
   }
 
+  &:hover {
+    &:before {
+      background-color: #3e3e3e;
+    }
+  }
+
+  &:active {
+    &:before {
+      background-color: #6b6b6b;
+    }
+  }
+
+
   @media (min-width: $tablet-width) {
     &::before {
       left: 0;
@@ -35,11 +49,55 @@
   }
 }
 
+
 .main-footer__social-list {
   position: relative;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 65px;
+  margin-bottom: 65px;
   display: flex;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: -140px;
+    width: 280px;
+    height: 1px;
+    background-color: #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 1px;
+    left: -140px;
+    top: 40px;
+    background-color: #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
+}
+
+.main-footer__social-link {
+  &:hover {
+    &::before {
+      background-color: $basic-green;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: $basic-green;
+      opacity: 0.3;
+    }
+  }
 }
 
 .main-footer__social-link--vk {
@@ -119,7 +177,6 @@
   line-height: 20px;
   text-decoration: none;
   position: relative;
-  align-self: start;
 
   &::before {
     position: absolute;
@@ -129,6 +186,21 @@
     height: 34px;
     mask-image: url("../../images/icons/stack.svg#academy-logo");
     background-color: #666666;
+  }
+
+  &:hover {
+    &::before {
+      background-color: $basic-green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::before {
+      background-color: $basic-green;
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {

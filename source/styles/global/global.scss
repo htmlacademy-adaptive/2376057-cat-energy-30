@@ -14,19 +14,13 @@ ul {
   list-style-type: none;
 }
 
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 20px;
-  max-width: 1260px;
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
-  }
 }
