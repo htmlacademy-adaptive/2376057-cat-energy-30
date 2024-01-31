@@ -1,20 +1,27 @@
 .main-header__container {
   height: 100%;
   position: relative;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 280px;
+  height: 65px;
+  margin: 0 auto;
+
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    // padding: 0 30px;
     padding-top: 39px;
-    justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
+    width: 708px;
+    margin: 0 auto;
+    gap: 94px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
     padding: 0 110px;
     max-width: 1440px;
     padding-top: 71px;
@@ -28,11 +35,12 @@
   justify-content: space-between;
   gap: 56px;
 
-  &:hover {
+  &[type]:hover &[href]:hover {
+
     opacity: 0.8;
   }
 
-  &:active {
+  &[type]:active &[href]:active {
     opacity: 0.6;
   }
 
@@ -41,7 +49,36 @@
   }
 }
 
+.main-header__main-logo {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  pointer-events: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
+}
+
+.main-header__primary-logo-image {
+  @media (min-width: $tablet-width) {
+    pointer-events: all;
+  }
+}
+
+.main-header__secondary-logo-image {
+  @media (min-width: $tablet-width) {
+    pointer-events: all;
+  }
+}
+
+
 .main-header__toggle {
+  margin-bottom: 3px;
   align-self: center;
   display: block;
   border: 0;
@@ -58,4 +95,3 @@
     display: none;
   }
 }
-

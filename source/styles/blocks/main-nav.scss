@@ -10,7 +10,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-width: 490px;
+    display: block;
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
   }
 }
 
@@ -23,6 +28,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    gap: 33px;
+    width: 436px;
     gap: 33px;
   }
 }
@@ -61,7 +68,6 @@
 
 .main-nav__link {
   color: $darker;
-  font-size: 20;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -71,6 +77,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,12 +1,9 @@
-.advantages__wrapper {
-  padding-top: 45px;
-}
-
 .advantages__title {
   font-size: 36px;
   line-height: 40px;
   margin: 0;
   margin-bottom: 42px;
+  margin-top: 3px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -16,6 +13,7 @@
 .advantages__wrapper {
   margin: 0 auto;
   width: 280px;
+  padding-top: 59px;
   padding-bottom: 53px;
 
   @media (min-width: $tablet-width) {
@@ -36,11 +34,11 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 37px 135px;
+    gap: 37px 137px;
     margin-left: 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     gap: 37px 80px;
   }
 }
