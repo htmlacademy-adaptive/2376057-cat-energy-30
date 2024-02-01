@@ -128,6 +128,10 @@
 .selection__item {
   &--add {
     margin-bottom: 13px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
   }
 }
 
@@ -310,6 +314,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 37px;
   }
 
   @media (min-width: $desktop-width) {

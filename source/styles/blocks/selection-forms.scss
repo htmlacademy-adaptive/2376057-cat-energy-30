@@ -1,48 +1,97 @@
-
 .selection__forms-title {
+  position: relative;
 
   &--radio {
     padding-left: 45px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 60px;
+    }
   }
 
   &--checkbox {
     padding-left: 43px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 60px;
+    }
   }
 
 }
 
 .selection-forms-radio {
-  appearance: none;
-  position: absolute;
+  margin: 0;
+  padding: 0;
 
-  &:checked + .selection-radio {
-    background-image: url("../../images/icons/stack.svg#radio-button-checked");
+  &:checked+.selection-radio::after {
+    content: "";
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    background-color: $basic-green;
+    border-radius: 50%;
+    top: 13px;
+    left: 13px;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+      left: 18px;
+      top: 18px;
+    }
   }
 }
 
 .selection__form-checkbox {
-  appearance: none;
-  position: absolute;
+  margin: 0;
+  padding: 0;
 
-  &:checked + .selection-checkbox {
-    background-image: url("../../images/icons/stack.svg#checkbox-checked");
+  &:checked+.selection-checkbox {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url("../../images/icons/stack.svg#mark");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 
 .selection-radio {
-  position: absolute;
+  display: block;
   width: 30px;
   height: 30px;
-  background-size: cover;
-  background-image: url("../../images/icons/stack.svg#radio-button-off");
-  margin-left: -45px;
+  border: 2px solid #cdcdcd;
+  border-radius: 50%;
+  background-color: $lighter;
+  top: 0;
+  cursor: pointer;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .selection-checkbox {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #cdcdcd;
+  top: -2px;
+  background-color: $lighter;
+  cursor: pointer;
   position: absolute;
-  width: 26px;
-  height: 26px;
-  background-size: cover;
-  background-image: url("../../images/icons/stack.svg#checkbox-off");
-  margin-left: -43px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }

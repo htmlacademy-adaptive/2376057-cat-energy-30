@@ -1,16 +1,13 @@
 .main-header__container {
-  height: 100%;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 280px;
-  height: 65px;
   margin: 0 auto;
 
 
   @media (min-width: $tablet-width) {
-    // padding: 0 30px;
     padding-top: 39px;
     flex-wrap: nowrap;
     align-items: center;
@@ -22,14 +19,13 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
-    padding: 0 110px;
     max-width: 1440px;
-    padding-top: 71px;
+    padding-top: 40px;
   }
 }
 
 .main-header__logo-wrapper {
-  width: 55%;
+  padding: 13px 0 11px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
