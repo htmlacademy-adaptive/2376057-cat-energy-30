@@ -1,8 +1,9 @@
 .main-nav {
 
-  width: 100%;
+  width: 320px;
   position: absolute;
   top: 100%;
+  left: -20px;
 
   &--closed {
     display: none;
@@ -20,7 +21,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 475px;
+    width: 476px;
   }
 }
 
@@ -33,12 +34,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 436px;
     gap: 33px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 475px;
   }
 }
 

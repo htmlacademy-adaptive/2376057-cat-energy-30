@@ -199,6 +199,7 @@
   color: #666666;
   padding: 0;
   z-index: 1;
+  cursor: pointer;
 
   &::before {
     content: " ";
@@ -215,20 +216,20 @@
   }
 
   &:hover {
-    color: #666666;
+    color: $basic-green;
   }
 
   &:hover::before {
-    background-color: #666666;
+    background-color: $basic-green;
   }
 
   &:active {
-    color: $basic-secondary-color;
+    color: $basic-green;
     opacity: 0.6;
   }
 
   &:active::before {
-    background-color: $basic-secondary-color;
+    background-color: $basic-green;
   }
 
   @media (min-width: $tablet-width) {

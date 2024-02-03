@@ -261,25 +261,6 @@
   }
 }
 
-.selection__forms-input-tel {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    right: 20px;
-    top: 10px;
-    width: 20px;
-    height: 20px;
-    mask-image: url("../../images/icons/stack.svg#form-phone");
-    background-color: #000000;
-
-    @media (min-width: $tablet-width) {
-      right: 30px;
-    }
-  }
-}
-
 .selection__form-input--tel {
   width: 200px;
   height: 45px;

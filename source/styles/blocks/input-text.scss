@@ -1,0 +1,53 @@
+.input {
+  font-family: $primary-font;
+  color: $dark;
+  font-size: 16px;
+  line-height: 112%;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+  padding-left: 15px;
+
+  &--comment {
+    padding-bottom: 118px;
+  }
+
+  &--phone:focus-visible+ .selection__forms-title--tel::after {
+    background-color: $basic-green;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $dark;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-left: 20px;
+
+    &--comment {
+      padding-bottom: 135px;
+    }
+  }
+}
+
+.selection__forms-title--tel {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    mask-image: url("../../images/icons/stack.svg#form-phone");
+    background-color: #000000;
+
+    &:focus-within {
+      background-color: $basic-green;
+    }
+
+    @media (min-width: $tablet-width) {
+      right: 30px;
+    }
+  }
+}
