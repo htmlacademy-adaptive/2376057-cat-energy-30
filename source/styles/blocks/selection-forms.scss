@@ -91,7 +91,7 @@
   }
 }
 
-.selection__form-label--radio {
+.selection-forms-label--radio {
   .selection-forms-radio:disabled~& {
     opacity: 0.3;
   }
@@ -122,7 +122,7 @@
   }
 }
 
-.selection__form-label--checkbox {
+.selection-forms-label--checkbox {
   .selection__form-checkbox:disabled~& {
     opacity: 0.3;
   }
