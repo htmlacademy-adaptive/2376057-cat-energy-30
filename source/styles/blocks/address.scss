@@ -35,6 +35,15 @@
   }
 }
 
+.address__subtitle-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    justify-content: space-between;
+  }
+}
+
 .address__subtitle {
   font-family: $secondary-font;
   color: $dark;
@@ -47,7 +56,6 @@
     font-size: 16px;
     width: 157px;
     text-align: end;
-    margin-bottom: 18px;
   }
 }
 

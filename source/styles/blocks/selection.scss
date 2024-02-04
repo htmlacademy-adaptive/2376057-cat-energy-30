@@ -156,6 +156,10 @@
   height: 45px;
   margin-bottom: 14px;
 
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 20px;
     height: 52px;
@@ -233,6 +237,10 @@
   width: 217px;
   height: 45px;
 
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
   @media (min-width: $tablet-width) {
     width: 552px;
   }
@@ -245,6 +253,10 @@
 .selection__form-input--tel {
   width: 200px;
   height: 45px;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
 
   @media (min-width: $tablet-width) {
     width: 530px;
@@ -261,6 +273,10 @@
   width: 280px;
   height: 150px;
   border: 2px solid #e7e7e7;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
 
   @media (min-width: $tablet-width) {
     width: 628px;
