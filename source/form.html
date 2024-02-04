@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/lato/Lato-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/Oswald-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
@@ -18,6 +20,12 @@
       <div class="main-header__logo-wrapper">
         <a class="main-header__main-logo" href="#">
           <picture>
+            <source width="33" height="38" type="image/webp" media="(min-width: 1440px)"
+              srcset="images/logo--mobile@1x.webp 1x, images/logo--mobile@2x.webp 2x">
+            <source width="70" height="59" type="image/webp" media="(min-width: 1440px)"
+              srcset="images/logo--desktop@1x.webp 1x, images/logo--desktop@2x.webp 2x">
+            <source width="60" height="50" type="image/webp" media="(min-width: 768px)"
+              srcset="images/logo--tablet@1x.webp 1x, images/logo--tablet@2x.webp 2x">
             <source width="70" height="59" type="image/png" media="(min-width: 1440px)"
               srcset="images/logo--desktop@1x.png 1x, images/logo--desktop@2x.png 2x">
             <source width="60" height="50" type="image/png" media="(min-width: 768px)"
@@ -38,14 +46,14 @@
           навигацию.</span></button>
       <nav class="main-nav main-nav--closed">
         <div class="main-nav__container">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list list">
             <li class="main-nav__item"><a class="main-nav__link main-nav__link--form-catalog"
                 href="index.html">главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link main-nav__link--form-catalog"
                 href="catalog.html">каталог продукции</a></li>
             <li class="main-nav__item"><span
-                class="main-nav__link main-nav__link--form-catalog main-nav__link--current-form-catalog"
-                href="form.html">подбор программы</span></li>
+                class="main-nav__link main-nav__link--form-catalog main-nav__link--current-form-catalog">подбор
+                программы</span></li>
           </ul>
         </div>
       </nav>
@@ -66,7 +74,7 @@
             <div class="selection__forms-wrapper">
               <fieldset class="selection__fieldset selection__fieldset--name">
                 <legend class="visually-hidden">Информация о животном</legend>
-                <ul class="selection__forms-list selection__forms-list--info">
+                <ul class="selection__forms-list selection__forms-list--info list">
                   <li class="selection__forms-item"><label class="selection__forms-title">
                       Имя:*
                       <input class="selection__forms-input selection__forms-input--name input" type="text" name="name"
@@ -74,19 +82,20 @@
                     </label></li>
                   <li class="selection__forms-item"><label class="selection__forms-title">
                       Вес (кг):*
-                      <input class="selection__forms-input selection__forms-input--weight input" type="text" name="weight"
-                      placeholder="7" required>
+                      <input class="selection__forms-input selection__forms-input--weight input" type="text"
+                        name="weight" placeholder="7" required>
                     </label></li>
                   <li class="selection__forms-item"><label class="selection__forms-title">
                       Возраст (Лет):
-                      <input class="selection__forms-input selection__forms-input--year input" type="text" name="years" placeholder="7">
+                      <input class="selection__forms-input selection__forms-input--year input" type="text" name="years"
+                        placeholder="7">
                     </label></li>
                 </ul>
               </fieldset>
 
               <fieldset class="selection__fieldset selection__fieldset--programm">
                 <legend class="visually-hidden">Выбор программы</legend>
-                <ul class="selection__forms-list selection__forms-list--programm">
+                <ul class="selection__forms-list selection__forms-list--programm list">
                   <li class="selection__forms-item selection__forms-item--programm">
                     <label class="selection__forms-title selection__forms-title--radio">
                       <input class="selection-forms-radio visually-hidden" type="radio" name="choice" checked>
@@ -115,24 +124,29 @@
             <fieldset class="selection__fieldset selection__fieldset--contacts">
               <legend class="selection__fieldset-title">Контактные данные
                 (владельца кота)</legend>
-              <ul class="selection__forms-list selection__forms-list--contacts">
+              <ul class="selection__forms-list selection__forms-list--contacts list">
                 <li class="selection__forms-item">
 
-                  <div class="selection__forms-input-email">
-                    <label class="selection__forms-title">
+                  <div class="selection__forms-input selection__forms-input--email">
+                    <label class="selection__forms-title selection__forms-title--email" for="email">
                       E-mail:*
-                      <input class="selection__form-input selection__form-input--email input input--email" type="email" name="email"
-                      placeholder="kuklachev@gmail.com" required>
                     </label>
+                    <div class="input-wrapper input-wrapper--email">
+                      <input class="selection__form-input selection__form-input--email input input--email" type="email"
+                        id="email" name="email" placeholder="kuklachev@gmail.com" required>
+                    </div>
                   </div>
                 </li>
                 <li class="selection__forms-item">
 
-                  <div class="selection__forms-input-tel">
-                    <label class="selection__forms-title selection__forms-title--tel">
+                  <div class="selection__forms-input selection__forms-input--tel">
+                    <label class="selection__forms-title selection__forms-title--tel" for="tel">
                       Телефон:*
-                      <input class="selection__form-input selection__form-input--tel input input--phone" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
                     </label>
+                    <div class="input-wrapper input-wrapper--tel">
+                      <input class="selection__form-input selection__form-input--tel input input--phone" type="tel"
+                        id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+                    </div>
                   </div>
 
                 </li>
@@ -150,31 +164,35 @@
 
             <fieldset class="selection__fieldset selection__fieldset--add">
               <legend class="selection__fieldset-title selection__fieldset-title--add">Дополнительно</legend>
-              <ul class="selection__forms-list selection__forms-list--add">
+              <ul class="selection__forms-list selection__forms-list--add list">
                 <li class="selection__item selection__item--add">
                   <label class="selection__forms-title selection__forms-title--checkbox">
-                    <input class="selection__form-checkbox visually-hidden" type="checkbox" name="selection__additionally" checked>
+                    <input class="selection__form-checkbox visually-hidden" type="checkbox"
+                      name="selection__additionally" checked>
                     сахарозаменитель
                     <span class="selection-checkbox"></span>
                   </label>
                 </li>
                 <li class="selection__item selection__item--add">
                   <label class="selection__forms-title selection__forms-title--checkbox">
-                    <input class="selection__form-checkbox visually-hidden" type="checkbox" name="selection__additionally">
+                    <input class="selection__form-checkbox visually-hidden" type="checkbox"
+                      name="selection__additionally">
                     питьевая вода
                     <span class="selection-checkbox"></span>
                   </label>
                 </li>
                 <li class="selection__item selection__item--add">
                   <label class="selection__forms-title selection__forms-title--checkbox">
-                    <input class="selection__form-checkbox visually-hidden" type="checkbox" name="selection__additionally">
+                    <input class="selection__form-checkbox visually-hidden" type="checkbox"
+                      name="selection__additionally">
                     молоко
                     <span class="selection-checkbox"></span>
                   </label>
                 </li>
                 <li class="selection__item selection__item--add">
                   <label class="selection__forms-title selection__forms-title--checkbox">
-                    <input class="selection__form-checkbox visually-hidden" type="checkbox" name="selection__additionally">
+                    <input class="selection__form-checkbox visually-hidden" type="checkbox"
+                      name="selection__additionally">
                     витамины
                     <span class="selection-checkbox"></span>
                   </label>
@@ -194,7 +212,7 @@
 
     <section class="address">
       <div class="address-wrapper">
-        <h2 class="address__title">приглашаем к сотрудничеству дилеров!</h2>
+        <h2 class="address__title">приглашаем <br> к сотрудничеству дилеров!</h2>
         <address class="address__subtitle">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <div class="address__wrapper-map">
@@ -204,6 +222,12 @@
           loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="address__wrapper-image">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="images/map--desktop@1x.webp 1x, images/map--desktop@2x.webp 2x" width="1440" height="400">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="images/map--tablet@1x.webp 1x, images/map--tablet@2x.webp 2x" width="768" height="400">
+            <source type="image/webp" srcset="images/map--mobile@1x.webp 1x, images/map--mobile@2x.webp 2x" width="768"
+              height="400">
             <source type="image/png" media="(min-width: 1440px)"
               srcset="images/map--desktop@1x.png 1x, images/map--desktop@2x.png 2x" width="1440" height="400">
             <source type="image/png" media="(min-width: 768px)"
@@ -224,7 +248,7 @@
         <span class="visually-hidden">Логотип cat energy.</span>
       </a>
 
-      <ul class="main-footer__social-list">
+      <ul class="main-footer__social-list list">
         <li class="main-footer__social-item">
           <a class="main-footer__social-link main-footer__social-link--vk" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Вконтакте.</span>

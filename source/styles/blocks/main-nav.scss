@@ -1,9 +1,10 @@
 .main-nav {
-
   width: 320px;
   position: absolute;
   top: 100%;
   left: -20px;
+
+
 
   &--closed {
     display: none;
@@ -12,6 +13,11 @@
   &--opened {
     display: block;
     z-index: 2;
+  }
+
+  &--nojs {
+    display: block;
+    position: static;
   }
 
   @media (min-width: $tablet-width) {
@@ -35,6 +41,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 33px;
+    flex-wrap: wrap;
   }
 }
 

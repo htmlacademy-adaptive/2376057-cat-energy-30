@@ -72,7 +72,7 @@
   margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-  margin-top: 36px;
+    margin-top: 36px;
     justify-content: space-between;
     width: 367px;
   }
@@ -215,6 +215,21 @@
     z-index: -1;
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 45px;
+    top: 234px;
+    background-image: url(../../images/icons/stack.svg#thumb-icon-hover);
+    z-index: -1;
+  }
+
+  &:hover::after {
+    z-index: 1;
+  }
+
   &:hover {
     color: $basic-green;
   }
@@ -223,9 +238,22 @@
     background-color: $basic-green;
   }
 
+  &:hover svg {
+    color: $basic-green;
+  }
+
+  &:focus-visible::before {
+    background-color: $basic-green;
+  }
+
   &:active {
     color: $basic-green;
     opacity: 0.6;
+  }
+
+  &:active svg {
+    opacity: 0.6;
+    color: $basic-secondary-color;
   }
 
   &:active::before {

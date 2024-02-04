@@ -2,6 +2,7 @@ let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.burger-toggle');
 
 navMain.classList.remove('main-nav--nojs');
+navToggle.classList.remove('burger-toggle--nojs');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {

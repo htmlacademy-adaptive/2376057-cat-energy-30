@@ -1,3 +1,13 @@
+.selection__forms-input {
+  &--email {
+    display: flex;
+  }
+
+  &--tel {
+    display: flex;
+  }
+}
+
 .input {
   font-family: $primary-font;
   color: $dark;
@@ -9,10 +19,6 @@
 
   &--comment {
     padding-bottom: 118px;
-  }
-
-  &--phone:focus-visible+ .selection__forms-title--tel::after {
-    background-color: $basic-green;
   }
 
   &:focus-visible {
@@ -29,10 +35,32 @@
   }
 }
 
-.selection__forms-title--tel {
+.input:disabled {
+  opacity: 0.5;
+  outline: 2px solid #cdcdcd;
+  cursor: not-allowed;
+}
+
+.input-wrapper {
   position: relative;
 
-  &::after {
+  &--email::after {
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    mask-image: url("../../images/icons/stack.svg#form-mail");
+    background-color: #000000;
+
+    @media (min-width: $tablet-width) {
+      left: 470px;
+    }
+
+  }
+
+  &--tel::after {
     position: absolute;
     content: "";
     right: 0;
@@ -42,7 +70,8 @@
     mask-image: url("../../images/icons/stack.svg#form-phone");
     background-color: #000000;
 
-    &:focus-within {
+    &:focus-within,
+    .input:focus-visible+& {
       background-color: $basic-green;
     }
 
@@ -50,4 +79,25 @@
       right: 30px;
     }
   }
+}
+
+.input-wrapper:focus-within {
+  &::after {
+    background-color: $basic-green;
+  }
+}
+
+.input-wrapper:focus-visible {
+  &::after {
+    background-color: $basic-green;
+  }
+}
+
+// Ставить в обёртку div для input (Пример: <div class="input-wrapper input-wrapper--phone input-wrapper--error">
+.input-wrapper--error {
+  outline: 2px solid #ff0000;
+}
+
+.input-wrapper--error::after {
+  background-color: #ff0000;
 }

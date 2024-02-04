@@ -49,6 +49,7 @@
   font-size: 14px;
   line-height: 18px;
   width: 200px;
+  min-height: 60px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -56,10 +57,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    gap: 30px;
     min-height: 280px;
     width: 245px;
-    gap: unset;
+    min-height: 280px;
 
     &::after {
       font-family: $primary-font, sans-serif;
@@ -97,6 +98,7 @@
     background-position: center;
 
     @media (min-width: $tablet-width) {
+      position: static;
       left: 0;
       top: 40px;
       width: 80px;
@@ -132,6 +134,7 @@
     background-position: center;
 
     @media (min-width: $tablet-width) {
+      position: static;
       left: 0;
       top: 40px;
       width: 80px;
@@ -158,6 +161,7 @@
     background-position: center;
 
     @media (min-width: $tablet-width) {
+      position: static;
       left: 0;
       top: 40px;
       width: 80px;
@@ -192,6 +196,7 @@
     background-position: center;
 
     @media (min-width: $tablet-width) {
+      position: static;
       left: 0;
       top: 40px;
       width: 80px;

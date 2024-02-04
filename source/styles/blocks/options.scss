@@ -202,6 +202,10 @@
     opacity: 0.8;
   }
 
+  &:hover::after {
+    background-position: 0 0;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -221,6 +225,9 @@
     width: 32px;
     height: 10px;
     background-image: url(../../images/icons/stack.svg#arrow-icon);
+    background-repeat: no-repeat;
+    background-position: -8px;
+    transition: 0.5s;
     left: 101px;
     top: 3px;
 

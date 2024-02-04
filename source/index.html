@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/lato/Lato-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/Oswald-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
@@ -18,6 +20,12 @@
       <div class="main-header__logo-wrapper">
         <a class="main-header__main-logo" href="#">
           <picture>
+            <source width="33" height="38" type="image/webp" media="(min-width: 1440px)"
+              srcset="images/logo--mobile@1x.webp 1x, images/logo--mobile@2x.webp 2x">
+            <source width="70" height="59" type="image/webp" media="(min-width: 1440px)"
+              srcset="images/logo--desktop@1x.webp 1x, images/logo--desktop@2x.webp 2x">
+            <source width="60" height="50" type="image/webp" media="(min-width: 768px)"
+              srcset="images/logo--tablet@1x.webp 1x, images/logo--tablet@2x.webp 2x">
             <source width="70" height="59" type="image/png" media="(min-width: 1440px)"
               srcset="images/logo--desktop@1x.png 1x, images/logo--desktop@2x.png 2x">
             <source width="60" height="50" type="image/png" media="(min-width: 768px)"
@@ -34,11 +42,12 @@
         </a>
       </div>
 
-      <button class="main-header__toggle burger-toggle" type="button"><span class="visually-hidden">Открыть
+      <button class="main-header__toggle burger-toggle burger-toggle--nojs" type="button"><span
+          class="visually-hidden">Открыть
           навигацию.</span></button>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__container">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list list">
             <li class="main-nav__item"><span class="main-nav__link main-nav__link--current">главная</span></li>
             <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">каталог продукции</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="form.html">подбор программы</a></li>
@@ -59,6 +68,12 @@
           </div>
           <div class="hero__main-image-wrapper">
             <picture>
+              <source width="552" height="499" type="image/webp" media="(min-width: 1440px)"
+                srcset="images/hero-bg--desktop@1x.webp 1x, images/hero-bg--desktop@2x.webp 2x">
+              <source width="709" height="609" type="image/png" media="(min-width: 768px)"
+                srcset="images/hero-bg--tablet@1x.webp 1x, images/hero-bg--tablet@2x.webp 2x">
+              <source width="280" height="270" type="image/webp" media="(min-width: 320px)"
+                srcset="images/hero-bg--mobile@1x.webp 1x, images/hero-bg--mobile@2x.webp 2x">
               <source width="552" height="499" type="image/png" media="(min-width: 1440px)"
                 srcset="images/hero-bg--desktop@1x.png 1x, images/hero-bg--desktop@2x.png 2x">
               <source width="709" height="609" type="image/png" media="(min-width: 768px)"
@@ -101,7 +116,7 @@
         <div class="advantages__wrapper">
           <h2 class="advantages__title">Как это работает</h2>
 
-          <ul class="advantages__list">
+          <ul class="advantages__list list">
             <li class="advantages__item advantages__item--leaf"><span class="advantages__text">Функциональное питание
                 содержит только полезные
                 питательные вещества.</span></li>
@@ -145,10 +160,15 @@
           <div class="example__wrapper-slider">
             <div class="example__wrapper-first">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="images/fat-cat--tablet@1x.webp 1x, images/fat-cat--tablet@2x.webp 2x" width="560"
+                  height="512">
+                <source type="image/webp" srcset="images/fat-cat--mobile@1x.webp, images/fat-cat--mobile@2x.webp 2x"
+                  width="280" height="256">
                 <source type="image/png" media="(min-width: 768px)"
-                  srcset="images/fat-cat--tablet@1x.png 1x, images/fat-cat--tablet@2x.png 2x" width="560" height="512">
-                <img src="images/fat-cat--mobile@1x.png" srcset="images/fat-cat--mobile@2x.png 2x" width="280"
-                  height="256" alt="Пример толстого кота.">
+                  srcset="images/fat-cat--tablet@1x.png 1x, images/fat-cat--tablet@1x.png 2x" width="560" height="512">
+                <img src="images/fat-cat--mobile@1x.png" srcset="images/fat-cat--mobile@2x.png 2x" alt="Толстый кот"
+                  width="280" height="256" loading="lazy">
               </picture>
             </div>
             <div class="example__wrapper-range">
@@ -161,11 +181,17 @@
             </div>
             <div class="example__wrapper-second">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="images/skinny-cat--mobile@1x.webp 1x, images/skinny-cat--mobile@2x.webp 2x" width="560"
+                  height="512">
+                <source type="image/webp"
+                  srcset="images/skinny-cat--mobile@1x.webp, images/skinny-cat--mobile@2x.webp 2x" width="280"
+                  height="256">
                 <source type="image/png" media="(min-width: 768px)"
                   srcset="images/skinny-cat--mobile@1x.png 1x, images/skinny-cat--mobile@2x.png 2x" width="560"
                   height="512">
-                <img src="images/skinny-cat--mobile@1x.png" srcset="images/skinny-cat--mobile@1x.png 2x" width="280"
-                  height="256" alt="Пример худого кота.">
+                <img src="images/skinny-cat--mobile@1x.png" srcset="images/skinny-cat--mobile2x.png 2x" alt="Худой кот"
+                  width="280" height="256" loading="lazy">
               </picture>
             </div>
           </div>
@@ -185,6 +211,12 @@
           loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="address__wrapper-image">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="images/map--desktop@1x.webp 1x, images/map--desktop@2x.webp 2x" width="1440" height="400">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="images/map--tablet@1x.webp 1x, images/map--tablet@2x.webp 2x" width="768" height="400">
+            <source type="image/webp" srcset="images/map--mobile@1x.webp 1x, images/map--mobile@2x.webp 2x" width="768"
+              height="400">
             <source type="image/png" media="(min-width: 1440px)"
               srcset="images/map--desktop@1x.png 1x, images/map--desktop@2x.png 2x" width="1440" height="400">
             <source type="image/png" media="(min-width: 768px)"
@@ -205,7 +237,7 @@
         <span class="visually-hidden">Логотип cat energy.</span>
       </a>
 
-      <ul class="main-footer__social-list">
+      <ul class="main-footer__social-list list">
         <li class="main-footer__social-item">
           <a class="main-footer__social-link main-footer__social-link--vk" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Вконтакте.</span>
