@@ -45,7 +45,8 @@
 
 .selection__fieldset {
   border: none;
-
+  margin: 0;
+  padding: 0;
 
   &--name {
     position: relative;
@@ -58,14 +59,6 @@
       height: 1px;
       left: -20px;
       background-color: #d9d9d9;
-    }
-
-    @media (min-width: $tablet-width) {
-      margin: 66px 0 72px 0;
-
-      &::after {
-        content: none;
-      }
     }
   }
 
@@ -80,14 +73,6 @@
       height: 1px;
       left: -20px;
       background-color: #d9d9d9;
-    }
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 97px;
-
-      &::after {
-        content: none;
-      }
     }
 
     @media (min-width: $tablet-width) {
@@ -111,6 +96,26 @@
 
   &--add {
     padding: 23px 0 34px 0;
+  }
+}
+
+.selection__fieldset--name {
+  @media (min-width: $tablet-width) {
+    margin: 66px 0 72px 0;
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.selection__fieldset--programm {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 97px;
+
+    &::after {
+      content: none;
+    }
   }
 }
 
@@ -154,6 +159,10 @@
 .selection__forms-input {
   height: 45px;
   margin-bottom: 14px;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 20px;
@@ -228,29 +237,13 @@
   }
 }
 
-.selection__forms-input-email {
-  position: relative;
-  margin-bottom: 19px;
-
-  &::after {
-    position: absolute;
-    content: "";
-    right: 20px;
-    top: 10px;
-    width: 20px;
-    height: 20px;
-    mask-image: url("../../images/icons/stack.svg#form-mail");
-    background-color: #000000;
-
-    @media (min-width: $tablet-width) {
-      right: 30px;
-    }
-  }
-}
-
 .selection__form-input--email {
   width: 217px;
   height: 45px;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
 
   @media (min-width: $tablet-width) {
     width: 552px;
@@ -264,6 +257,10 @@
 .selection__form-input--tel {
   width: 200px;
   height: 45px;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
 
   @media (min-width: $tablet-width) {
     width: 530px;
@@ -280,6 +277,10 @@
   width: 280px;
   height: 150px;
   border: 2px solid #e7e7e7;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
 
   @media (min-width: $tablet-width) {
     width: 628px;

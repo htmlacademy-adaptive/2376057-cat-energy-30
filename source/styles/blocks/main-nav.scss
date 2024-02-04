@@ -1,5 +1,4 @@
 .main-nav {
-
   width: 320px;
   position: absolute;
   top: 100%;
@@ -14,10 +13,16 @@
     z-index: 2;
   }
 
+  &--nojs {
+    display: block;
+    position: static;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
     display: block;
     width: 440px;
+    left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,6 +40,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 33px;
+    flex-wrap: wrap;
   }
 }
 
@@ -84,6 +90,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    line-height: 133%;
     font-size: 18px;
   }
 

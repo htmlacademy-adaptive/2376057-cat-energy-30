@@ -1,17 +1,17 @@
 .example-container {
   background-color: #eaeaea;
-  padding-top: 48px;
-  padding-bottom: 41px;
+  padding-top: 25px;
+  padding-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 100px;
+    background: linear-gradient(180deg, #ffffff 57%, #eaeaea 49%);
   }
 
   @media (min-width: $desktop-width) {
     padding: 25px 110px 40px 110px;
     max-width: 100%;
   }
-
 }
 
 .example__wrapper {
@@ -28,6 +28,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    margin-top: 30px;
     display: inline-block;
     font-size: 60px;
   }
@@ -72,7 +73,7 @@
   margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-  margin-top: 36px;
+    margin-top: 36px;
     justify-content: space-between;
     width: 367px;
   }
@@ -92,6 +93,7 @@
 
   @media (min-width: $tablet-width) {
     width: 162px;
+    height: 71px;
   }
 }
 
@@ -124,6 +126,7 @@
   @media (min-width: $tablet-width) {
     width: 125px;
     bottom: -5px;
+    font-size: 14px;
   }
 }
 
@@ -154,7 +157,7 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
-    margin: 83px 0 0 74px;
+    margin: 70px 0 0 74px;
     width: 516px;
   }
 
@@ -215,6 +218,26 @@
     z-index: -1;
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 106px;
+    background-image: url("../../images/icons/stack.svg#thumb-icon-hover");
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      left: 45px;
+      top: 234px;
+    }
+  }
+
+  &:hover::after {
+    z-index: 1;
+  }
+
   &:hover {
     color: $basic-green;
   }
@@ -223,9 +246,22 @@
     background-color: $basic-green;
   }
 
+  &:hover svg {
+    color: $basic-green;
+  }
+
+  &:focus-visible::before {
+    background-color: $basic-green;
+  }
+
   &:active {
     color: $basic-green;
     opacity: 0.6;
+  }
+
+  &:active svg {
+    opacity: 0.6;
+    color: $basic-secondary-color;
   }
 
   &:active::before {
