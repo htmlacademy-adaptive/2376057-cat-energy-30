@@ -60,14 +60,6 @@
       left: -20px;
       background-color: #d9d9d9;
     }
-
-    @media (min-width: $tablet-width) {
-      margin: 66px 0 72px 0;
-
-      &::after {
-        content: none;
-      }
-    }
   }
 
   &--programm {
@@ -81,14 +73,6 @@
       height: 1px;
       left: -20px;
       background-color: #d9d9d9;
-    }
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 97px;
-
-      &::after {
-        content: none;
-      }
     }
 
     @media (min-width: $tablet-width) {
@@ -112,6 +96,26 @@
 
   &--add {
     padding: 23px 0 34px 0;
+  }
+}
+
+.selection__fieldset--name {
+  @media (min-width: $tablet-width) {
+    margin: 66px 0 72px 0;
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.selection__fieldset--programm {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 97px;
+
+    &::after {
+      content: none;
+    }
   }
 }
 

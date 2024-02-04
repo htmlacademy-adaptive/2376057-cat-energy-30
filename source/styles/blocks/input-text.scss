@@ -57,7 +57,6 @@
     @media (min-width: $tablet-width) {
       left: 470px;
     }
-
   }
 
   &--tel::after {
@@ -71,7 +70,7 @@
     background-color: #000000;
 
     &:focus-within,
-    .input:focus-visible+& {
+    .input:focus-visible + & {
       background-color: $basic-green;
     }
 

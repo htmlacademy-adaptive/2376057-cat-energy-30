@@ -31,21 +31,21 @@
     background-color: #111111;
   }
 
-  &:hover {
-    &:before {
-      background-color: #3e3e3e;
-    }
+  &:hover:before {
+    background-color: #3e3e3e;
+
   }
 
-  &:active {
-    &:before {
-      background-color: #6b6b6b;
-    }
+  &:active:before {
+
+    background-color: #6b6b6b;
+
   }
 
 
   @media (min-width: $tablet-width) {
     margin-top: 10px;
+
     &::before {
       left: 0;
     }
