@@ -6,7 +6,6 @@
   width: 280px;
   margin: 0 auto;
 
-
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
     align-items: center;
@@ -18,12 +17,18 @@
     width: 1220px;
     margin: 0 auto;
     max-width: 1440px;
-    padding-top: 40px;
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      gap: 97px;
+    }
   }
 }
 
 .main-header__logo-wrapper {
   padding: 0;
+  padding-top: 13px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,6 +45,11 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
   }
 }
 
@@ -73,6 +83,7 @@
 
 .main-header__toggle {
   margin-bottom: 3px;
+  margin-top: 10px;
   align-self: center;
   display: block;
   border: 0;

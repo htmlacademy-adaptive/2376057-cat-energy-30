@@ -20,22 +20,22 @@
       <div class="main-header__logo-wrapper">
         <a class="main-header__main-logo" href="#">
           <picture>
-            <source width="33" height="38" type="image/webp" media="(min-width: 1440px)"
-              srcset="images/logo--mobile@1x.webp 1x, images/logo--mobile@2x.webp 2x">
             <source width="70" height="59" type="image/webp" media="(min-width: 1440px)"
-              srcset="images/logo--desktop@1x.webp 1x, images/logo--desktop@2x.webp 2x">
+              srcset="images/logo--desktop@1x.webp, images/logo--desktop@2x.webp 2x">
             <source width="60" height="50" type="image/webp" media="(min-width: 768px)"
-              srcset="images/logo--tablet@1x.webp 1x, images/logo--tablet@2x.webp 2x">
+              srcset="images/logo--tablet@1x.webp, images/logo--tablet@2x.webp 2x">
+            <source width="33" height="38" type="image/webp"
+              srcset="images/logo--mobile@1x.webp, images/logo--mobile@2x.webp 2x">
             <source width="70" height="59" type="image/png" media="(min-width: 1440px)"
-              srcset="images/logo--desktop@1x.png 1x, images/logo--desktop@2x.png 2x">
+              srcset="images/logo--desktop@1x.png, images/logo--desktop@2x.png 2x">
             <source width="60" height="50" type="image/png" media="(min-width: 768px)"
-              srcset="images/logo--tablet@1x.png 1x, images/logo--tablet@2x.png 2x">
+              srcset="images/logo--tablet@1x.png, images/logo--tablet@2x.png 2x">
             <img class="main-header__primary-logo-image" src="images/logo--mobile@1x.png"
               srcset="images/logo--mobile@2x.png 2x" alt="Логотип СatEnergy." width="33" height="38">
           </picture>
           <picture>
             <source width="118" height="21" type="image/png" media="(min-width: 1440px)"
-              srcset="images/logo-name--desktop@1x.png 1x, images/logo-name--desktop@2x.png 2x">
+              srcset="images/logo-name--desktop@1x.png, images/logo-name--desktop@2x.png 2x">
             <img class="main-header__secondary-logo-image" src="images/logo-name--mobile--tablet@1x.png"
               srcset="images/logo-name--mobile--tablet@2x.png 2x" alt="Надпись СatEnergy." width="101" height="18">
           </picture>
@@ -98,14 +98,14 @@
             <p class="options__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора
               на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="options__link" href="#">каталог slim</a>
+            <a class="options__link options__link--lose" href="#">каталог slim</a>
           </div>
 
           <div class="options__card">
             <h2 class="options__title options__title--gain">набор массы</h2>
             <p class="options__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
               поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="options__link" href="#">каталог pro</a>
+            <a class="options__link options__link--gain" href="#">каталог pro</a>
           </div>
         </div>
       </div>
@@ -154,7 +154,7 @@
                   <dd class="example__argument-description">затрачено времени</dd>
                 </div>
               </dl>
-              <h3 class="example__subtitle">затраты на питание: 15 000 руб.</h3>
+              <h3 class="example__subtitle">затраты на питание: <span>15 000 руб.</span></h3>
             </div>
           </div>
           <div class="example__wrapper-slider">
