@@ -4,7 +4,7 @@
   flex-direction: column;
 
   @media (min-width: $desktop-width) {
-    height: 694px;
+    height: 661px;
   }
 }
 
@@ -37,18 +37,6 @@
     @media (min-width: $tablet-width) {
       display: none;
     }
-
-    @media (min-width: $desktop-width) {
-      display: block;
-      background-image:
-        image-set(url("../../images/hero-cat-bg-desktop@1x.jpg") type("image/jpg") 1x,
-          url("../../images/hero-cat-bg-desktop@2x.jpg") type("image/jpg") 2x);
-      width: 50%;
-      height: 694px;
-      top: -81px;
-      background-size: cover;
-      background-position: left;
-    }
   }
 
   &::after {
@@ -65,13 +53,6 @@
     @media (min-width: $tablet-width) {
       display: none;
     }
-
-    @media (min-width: $desktop-width) {
-      display: block;
-      top: -81px;
-      width: 50%;
-      height: 694px;
-    }
   }
 }
 
@@ -83,7 +64,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 150px 0 0 80px;
+    margin: 109px 0 0 80px;
   }
 }
 
@@ -103,7 +84,7 @@
     width: 450px;
     text-align: start;
     margin: 0;
-    margin-top: 65px;
+    margin-top: 62px;
     margin-bottom: 40px;
   }
 
@@ -125,6 +106,7 @@
     text-align: start;
     font-size: 20px;
     margin: 0;
+    margin-top: 4px;
     margin-bottom: 25px;
   }
 
@@ -147,7 +129,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 100px;
+    top: 28px;
     left: 39%;
   }
 }
@@ -158,9 +140,13 @@
   min-width: 244px;
   margin-top: 3px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+  }
+
   @media (min-width: $desktop-width) {
     text-align: start;
-    margin-top: 52px;
+    margin-top: 32px;
     margin-left: 80px;
   }
 }

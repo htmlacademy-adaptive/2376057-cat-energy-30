@@ -43,18 +43,23 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 600px;
+    margin-left: 0;
+    margin-top: 40px;
   }
 }
 
 .catalog__additionally-list {
+  margin-top: 16px;
+  margin-bottom: 34px;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
+    margin-top: 58px;
     margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 55px;
     margin-right: 80px;
     width: 895px;
   }
@@ -67,10 +72,10 @@
   &::after {
     position: absolute;
     content: "";
-    width: 320px;
+    width: 280px;
     height: 1px;
-    left: -20px;
-    top: -10px;
+    left: 0;
+    top: 0;
     background-color: $light-gray;
 
     @media (min-width: $tablet-width) {
@@ -84,7 +89,7 @@
     width: 280px;
     height: 1px;
     left: 0;
-    bottom: 10px;
+    bottom: 0;
     background-color: $light-gray;
 
     @media (min-width: $tablet-width) {
@@ -98,7 +103,7 @@
     justify-content: space-between;
     align-items: center;
     border: 1px solid #cdcdcd;
-    padding: 0 38px 29px;
+    padding: 14px 38px 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -106,16 +111,25 @@
     border-top: 1px solid #cdcdcd;
     border-bottom: 1px solid #cdcdcd;
     padding: 0;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-bottom: 9px;
+    padding-top: 10px;
   }
 }
 
 .catalog__aditionally-title {
   position: relative;
+  font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 3px;
+  }
 }
 
 .catalog__additionally-text-wrapper {
@@ -139,15 +153,27 @@
   color: $dark;
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 3px;
+  }
 }
 
 .catalog__additionally-button {
   @include button;
   border: none;
   width: 280px;
+  font-size: 16px;
+  font-family: $primary-font;
+  height: 40px;
 
   @media (min-width: $tablet-width) {
     width: 632px;
+    margin-top: 10px;
   }
 
   @media (min-width: $desktop-width) {

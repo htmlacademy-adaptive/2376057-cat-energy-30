@@ -20,6 +20,10 @@
     margin-left: 110px;
     align-items: center;
   }
+
+  &--form {
+    background-color: $basic-grey;
+  }
 }
 
 .address__title {
@@ -91,5 +95,5 @@
 
 .address__image {
   width: 100%;
-  object-fit: cover;
+  height: 362px;
 }

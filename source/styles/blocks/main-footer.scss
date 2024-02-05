@@ -1,5 +1,9 @@
 .main-footer {
   background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+  }
 }
 
 .main-footer__container {
@@ -16,6 +20,10 @@
     padding-top: 0;
     height: 147px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 53px;
+  }
 }
 
 .main-footer__logo-link {
@@ -24,24 +32,20 @@
   &::before {
     position: absolute;
     content: "";
-    left: -66px;
+    left: -67px;
     width: 128px;
     height: 24px;
     mask-image: url("../../images/icons/stack.svg#logo-footer");
     background-color: #111111;
   }
 
-  &:hover:before {
+  &:hover::before {
     background-color: #3e3e3e;
-
   }
 
-  &:active:before {
-
+  &:active::before {
     background-color: #6b6b6b;
-
   }
-
 
   @media (min-width: $tablet-width) {
     margin-top: 10px;
@@ -114,7 +118,7 @@
   &::before {
     position: absolute;
     content: "";
-    left: -64px;
+    left: -66px;
     width: 28px;
     height: 22px;
     mask-image: url("../../images/icons/stack.svg#vk");
@@ -123,7 +127,7 @@
 
   @media (min-width: $tablet-width) {
     &::before {
-      left: 19px;
+      left: 16px;
     }
   }
 }
@@ -134,7 +138,7 @@
   &::before {
     position: absolute;
     content: "";
-    left: -12px;
+    left: -14px;
     width: 28px;
     height: 22px;
     mask-image: url("../../images/icons/stack.svg#yt");
@@ -143,7 +147,7 @@
 
   @media (min-width: $tablet-width) {
     &::before {
-      left: 74px;
+      left: 69px;
     }
   }
 }
@@ -154,7 +158,7 @@
   &::before {
     position: absolute;
     content: "";
-    left: 35px;
+    left: 37px;
     width: 28px;
     height: 22px;
     mask-image: url("../../images/icons/stack.svg#tg");
@@ -163,7 +167,7 @@
 
   @media (min-width: $tablet-width) {
     &::before {
-      left: 125px;
+      left: 120px;
     }
   }
 }
@@ -173,8 +177,9 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 170px;
+    width: 162px;
     margin: 0;
+    margin-top: 34px;
   }
 }
 
@@ -189,6 +194,7 @@
   &::before {
     position: absolute;
     content: "";
+    top: -5px;
     left: 253px;
     width: 27px;
     height: 34px;
@@ -213,7 +219,8 @@
 
   @media (min-width: $tablet-width) {
     &::before {
-      left: 130px;
+      top: -6px;
+      left: 136px;
     }
   }
 }
